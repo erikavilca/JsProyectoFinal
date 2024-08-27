@@ -1,0 +1,262 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-rows: 130px auto 150px;
+    grid-template-areas: "header header"
+        "main nav"
+        "footer footer";
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body header {
+    grid-area: header;
+    background-color: rgb(148, 167, 169);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+body header .btnCarrito {
+    padding: 5px 40px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(143, 143, 143);
+    font-size: 12px;
+}
+
+body header h1 {
+    font-size: 30px;
+    text-shadow: 10px 10px 10px rgb(124, 168, 154);
+    font-weight: bolder;
+    line-height: 50px;
+    color: rgb(18, 18, 18);
+}
+
+body header #buscador {
+    width: 410px;
+    height: 34px;
+    margin-top: 35px;
+    border-radius: 10px;
+    padding: 9px;
+}
+
+body main .CodValido {
+    background-color: rgb(148, 167, 169);
+    padding: 2px 100px;
+}
+
+body main {
+    grid-area: main;
+    background-color: rgb(218, 218, 218);
+    padding: 30px;
+}
+
+body main #container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(209, 209, 209);
+    padding: 20px;
+}
+
+body main #container .itemNuevos {
+    width: 175px;
+    height: 275px;
+    padding: 8px;
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: rgb(228, 228, 228);
+
+}
+
+body main #container .itemNuevos img {
+    width: 175px;
+    height: 175px;
+    border-radius: 10px;
+}
+
+body main #container .itemNuevos h2 {
+    font-size: 17px;
+    margin-top: 5px;
+    height: 20px;
+    overflow: hidden;
+}
+
+body main #container .itemNuevos button {
+    width: 140px;
+    height: 22px;
+    margin: 10px 0px;
+    text-align: center;
+    font-size: 14px;
+    background-color: rgb(33, 33, 33);
+    color: aliceblue;
+    border-radius: 30px;
+}
+
+body nav {
+    background-color: rgb(198, 198, 198);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+body nav .containerNav {
+    background-color: rgb(225, 225, 225);
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 300px;
+}
+
+body nav h3 {
+    text-align: center;
+    background-color: rgb(171, 171, 171);
+}
+
+body nav button {
+    padding: 5px;
+    margin: 15px 30px;
+    background-color: rgb(104, 104, 104);
+    border: none;
+    border-radius: 15px;
+}
+
+body nav .filtrar label {
+    margin: 10px;
+}
+
+body nav .costadoItem {
+    border: 1px solid black;
+    margin-bottom: 8px;
+    background-color: rgb(169, 113, 113);
+    border-radius: 10px;
+}
+
+body footer {
+    background-color: rgb(150, 150, 150);
+    grid-area: footer;
+}
+
+
+.bodyCarrito {
+    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-rows: 100px auto 100px;
+    grid-template-areas: "header header"
+        "main nav"
+        "footer footer";
+}
+
+.bodyCarrito header {
+    grid-area: header;
+    justify-content: space-evenly;
+    background-color: rgb(143, 164, 162);
+}
+
+.bodyCarrito main {
+    grid-area: main;
+    background-color: rgb(212, 212, 212);
+    padding: 30px 40px;
+}
+
+.bodyCarrito nav {
+    grid-area: nav;
+    background-color: rgb(198, 198, 198);
+
+}
+
+.bodyCarrito nav .cupon {
+    margin: 30px 10px;
+    padding: 18px;
+    border-radius: 10px;
+    background-color: rgb(211, 203, 114);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.bodyCarrito nav .containerNav {
+    height: 300px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    background-color: rgb(181, 181, 181);
+}
+
+.bodyCarrito nav .containerNav #containerPago {
+    height: 80%;
+    border-top: 1px solid black;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.bodyCarrito main .ContainerMain {
+    background-color: rgb(223, 222, 222);
+    border-radius: 20px;
+    height: auto;
+}
+
+.bodyCarrito main #containerProductos {
+    display: block;
+    padding: 30px 60px;
+    background-color: rgb(183, 183, 183);
+}
+
+.bodyCarrito main #containerProductos .itemNuevos {
+    width: 100%;
+    height: 135px;
+    display: flex;
+    padding: 10px;
+    color: black;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: rgb(237, 236, 236);
+
+}
+
+.bodyCarrito main #containerProductos .itemNuevos img {
+    width: 135px;
+    height: 135px;
+    border-radius: 10px;
+}
+
+.bodyCarrito main #containerProductos .itemNuevos .boxInf {
+    display: block;
+    margin: 20px 40px;
+}
+
+.bodyCarrito main #containerProductos .itemNuevos h2 {
+    font-size: 20px;
+}
+
+.bodyCarrito main #containerProductos .itemNuevos .cantidades {
+    display: flex;
+    margin-left: 68px;
+}
+
+.bodyCarrito footer {
+    grid-area: footer;
+    background-color: black;
+}
+
+#validarCupon {
+    width: 110px;
+}
+
+.carritoVacio {
+    text-align: center;
+    font-size: 27px;
+    background-color: rgba(127, 149, 167, 0.726);
+    padding: 20px 0px 30px;
+    margin: 20px 40px 30px;
+    border-radius: 70px 10px 70px 10px;
+}
+
+.btnATienda {
+    padding: 10px 20px;
+    margin-top: 30px;
+    background-color: rgb(87, 123, 168);
+    border-radius: 10px;
+    border: none;
+}

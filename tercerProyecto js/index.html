@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockerizando</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header>
+
+        <h1>ShoppingJr</h1>
+        <input id="buscador" type="text" placeholder="Buescar producto...">
+        <a href="carrito.html"><button class="btnCarrito">CARRITO</button></a>
+        
+    </header>
+    <nav>
+        <div class="containerNav">
+            <div class="filtrar">
+                <h3>Filtrado de</h3>
+                <form id="Filtrado1">
+                    <legend>Categorias:</legend>
+                    <label><input type="radio" name="category" value="men's clothing"> ropa hombre</label><br>
+                    <label><input type="radio" name="category" value="women's clothing"> ropa mujer</label><br>
+                    <label><input type="radio" name="category" value="jewelery"> Accesorios</label><br>
+                    <label><input type="radio" name="category" value="electronics"> electro</label><br>
+                    <button type="submit">buscar >></button>
+                </form>
+                <form id="Filtrado2">
+                    <legend>Precio:</legend>
+                    <label><input type="radio" name="price" value="menorPrecio"> Menor a mayor </label><br>
+                    <label><input type="radio" name="price" value="mayorPrecio">  Meyor a menor </label><br>
+                    <label><input type="radio" name="price" value="60"> Hasta $60 </label><br>
+                    <button type="submit">buscar >></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <span class="CodValido">CUPON: Hol4</span>
+        <div class="containerMain">
+            <div id="container">
+                <!-- Aqui se le agregan los div -->
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
